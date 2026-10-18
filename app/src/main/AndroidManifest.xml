@@ -12,14 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TenantManagementSystemLab">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".login_activity"
+            android:exported="false" />
+        <activity
+            android:name=".register_activity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
